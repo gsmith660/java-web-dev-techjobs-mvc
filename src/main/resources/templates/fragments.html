@@ -41,19 +41,19 @@
                     </p>
                     <p>
                         <strong>Employer: </strong>
-                        <em th:text="${job.employer}">employer</em>
+                        <em><a th:text="${job.employer}" th:href="@{/list/jobs(column=employer,value=${job.employer})}">employer</a></em>
                     </p>
                     <p>
                         <strong>Location: </strong>
-                        <em th:text="${job.location}">location</em>
+                        <em><a th:text="${job.location}" th:href="@{/list/jobs(column=location,value=${job.location})}">location</a></em>
                     </p>
                     <p>
                         <strong>Position Type: </strong>
-                        <em th:text="${job.positionType}">positionType</em>
+                        <em><a th:text="${job.positionType}" th:href="@{/list/jobs(column=positionType,value=${job.positionType})}">positionType</a></em>
                     </p>
                     <p>
                         <strong>Skill: </strong>
-                        <em th:text="${job.coreCompetency}">coreCompetency</em>
+                        <em><a th:text="${job.coreCompetency}" th:href="@{/list/jobs(column=coreCompetency,value=${job.coreCompetency})}">coreCompetency</a></em>
                     </p>
                 </td>
             </tr>
